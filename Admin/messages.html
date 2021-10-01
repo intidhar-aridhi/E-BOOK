@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-BOOK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+ 
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:lightslategray;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+ 
+    <h1 style="color: #6C55F9; font-style: italic;">E-BOOK</h1>
+  <a  href="home.html">Home</a>
+  <a href="books.html">Books</a>
+  <a href="messages.html">Messages</a>
+ 
+</div>
+
+<div class="content" >
+   
+<h1>message managment</h1>
+    <table id="customers" >
+        <tr>
+          <th>firstname</th>
+          <th>lastname</th>
+          <th>Subject</th>
+          <th style="width: 500px;">Message</th>
+          <th>Details</th>
+         </tr>
+        <tr>
+          <td>Aridhi</td>
+          <td>Intidhar</td>
+          <td>Subject</td>
+          <td>message</td>
+          <td>
+            <button style="border-radius: 50px; background-color: green;">Reply</button>
+            <button style="border-radius: 50px; background-color:red;">Cancel</button>
+          </td>
+
+        </tr>
+     
+        <tr>
+          <td>Aridhi</td>
+          <td>Intidhar</td>
+          <td>Subject</td>
+          <td>message</td>
+          <td>
+            <button style="border-radius: 50px; background-color: green;">Reply</button>
+            <button style="border-radius: 50px; background-color:red;">Cancel</button>
+          </td>
+
+        </tr>
+     
+        <tr>
+          <td>Aridhi</td>
+          <td>Intidhar</td>
+          <td>Subject</td>
+          <td>message</td>
+          <td>
+            <button style="border-radius: 50px; background-color: green;">Reply</button>
+            <button style="border-radius: 50px; background-color:red;">Cancel</button>
+          </td>
+
+        </tr>
+        
+      </table>
+</div>
+
+</body>
+</html>
